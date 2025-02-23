@@ -67,4 +67,14 @@ struct Queue* InsertArrivalProcessToQueue(struct ProcessNode* head, struct Queue
     return q;
 }
 
+void FreeProcessList(struct ProcessNode* p)
+{
+    struct ProcessNode* t = p;
+    while (p) {
+        p = p->next;
+        free(t);
+        t = p;
+    }
+}
+
 #endif

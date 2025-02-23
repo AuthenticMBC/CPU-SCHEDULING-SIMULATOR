@@ -43,6 +43,9 @@ void PriorityScheduling(char* input_file, char* output_file)
         currentTime++;
     }
     saveResult(head, output_file, 5); // Priority Preemptive
+
+    // Free memory
+    FreeProcessList(head);
 }
 
 

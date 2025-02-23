@@ -25,6 +25,9 @@ void FirstComeFistServe(char* input_file, char* output_file)
     }
     // Save Result to output file and print no terminal screen
     saveResult(head, output_file, 1);
+
+    // Free memory
+    FreeProcessList(head);
 }
 
 

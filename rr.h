@@ -40,6 +40,9 @@ void RoundRobin(int time_quantum, char* input_file, char* output_file)
         }
     }
     saveResult(head, output_file, 6); // Round Robin
+
+    // Free memory
+    FreeProcessList(head);
 }
 
 

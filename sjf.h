@@ -40,6 +40,9 @@ void ShortestJobFirst(char* input_file, char* output_file)
         currentTime++;
     }
     saveResult(head, output_file, 3); // SJF Preemptive
+
+    // Free memory
+    FreeProcessList(head);
 }
 
 
